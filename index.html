@@ -50,14 +50,14 @@
 
       <div class="options">
         <label class="radio-option">
-          <input type="radio" name="splitMode" value="each" checked>
-          모든 페이지를 각각의 PDF로 분할 (zip으로 다운로드)
-        </label>
-        <label class="radio-option">
-          <input type="radio" name="splitMode" value="range">
+          <input type="radio" name="splitMode" value="range" checked>
           페이지 범위를 지정해서 구간별로 분할 (쉼표로 구분한 구간마다 별도 파일로 출력)
         </label>
-        <input type="text" id="splitRange" placeholder="예: 1-2,4-5,7 (쉼표로 구분된 각 구간이 별도 파일로 출력됩니다)" disabled>
+        <input type="text" id="splitRange" placeholder="예: 1-2,4-5,7 (쉼표로 구분된 각 구간이 별도 파일로 출력됩니다)">
+        <label class="radio-option">
+          <input type="radio" name="splitMode" value="each">
+          모든 페이지를 각각의 PDF로 분할 (zip으로 다운로드)
+        </label>
       </div>
 
       <button class="action-btn" id="splitBtn" disabled>분할하기</button>
